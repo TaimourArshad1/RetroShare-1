@@ -1,9 +1,9 @@
 // SPDX-FileCopyrightText: Retroshare Team <contact@retroshare.cc>
 // SPDX-License-Identifier: CC-BY-SA-4.0
 
-= RetroShare
+**Please refer to the folder "Software Quality Implementations" for our changes and testing on the RetroShare code!**
 
-Please refer to the folder "Software Quality Implementations" for our changes and testing on the RetroShare code!
+= RetroShare
 
 
 RetroShare is a decentralized, private, secure, cross-platform, communication
