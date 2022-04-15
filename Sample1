@@ -1,27 +1,27 @@
 class InvalidPasswordException extends Exception {
-      int passwordConditionViolated = 0;
+      int passwordConditionViolated = 0; //Intialize password condition variable to 0
       public InvalidPasswordException(int conditionViolated)
     {        super("Invalid Password: ");
         passwordConditionViolated = conditionViolated;
     }    public String printMessage()
-    {        switch (passwordConditionViolated) {
-          case 1:
-            return ("Password length should be"
+    {        switch (passwordConditionViolated) { //Checks if password input "violates" any of the cases
+          case 1: 
+            return ("Password length should be" //Password is too short in length
                     + " between 8 to 15 characters");
           case 2:
-            return ("Password should not"
+            return ("Password should not" //Password cannot contain spaces
                     + " contain any space");
                 case 3:
-            return ("Password should contain"
+            return ("Password should contain" //Password requires at least one numerical value
                     + " at least one digit(0-9)");
                case 4:
-            return ("Password should contain at "
+            return ("Password should contain at " //Password requires one special value (!, ?, $ etc.)
                     + "least one special character")
                case 5:
-            return ("Password should contain at"
+            return ("Password should contain at" //Password requires at least one uppercase letter
                     + " least one uppercase letter(A-Z)");
               case 6:
-            return ("Password should contain at"
+            return ("Password should contain at" //Password requires at least one lower case letter
                     + " least one lowercase letter(a-z)");
         }
           return ("");    }
