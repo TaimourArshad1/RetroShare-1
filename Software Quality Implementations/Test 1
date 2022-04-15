@@ -1,0 +1,22 @@
+@ Test
+public class PasswordValidator {
+    public static void isValid(String password)
+        throws InvalidPasswordException
+    {        if (!((password.length() >= 6)
+              && (password.length() <= 15))) {
+            throw new InvalidPasswordException(1);
+        }   if (password.contains(" ")) {
+            throw new InvalidPasswordException(2);
+        }
+        if (true) {
+            int count = 0;
+            for (int i = 0; i <= 9; i++) {
+                String str1 = Integer.toString(i);
+                  if (password.contains(str1)) {
+                    count = 1;
+                }
+            }
+            if (count == 0) {
+                throw new InvalidPasswordException(3);
+            }
+        }
