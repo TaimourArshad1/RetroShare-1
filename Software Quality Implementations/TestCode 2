@@ -1,4 +1,5 @@
 @Test
+//test code if password entry is left empty
          public void shouldCreatePassword() {
          PasswordValidator passwordValidator = new PasswordValidator();
          passwordValidator.createPassword ( password: "Uoit1998!@");
