@@ -1,6 +1,6 @@
 if (true) {
-            int count = 0;
-            for (int i = 65; i <= 90; i++) {
+            int count = 0; //Intiliazes count to 0 
+            for (int i = 65; i <= 90; i++) { //For loop, sets i to 65 and checks if it is lower than or equal to 90, increment by 1
                 char c = (char)i;
                   String str1 = Character.toString(c);
                 if (password.contains(str1)) {
