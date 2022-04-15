@@ -3,6 +3,9 @@
 
 = RetroShare
 
+Please refer to the folder "Software Quality Implementations" for our changes and testing on the RetroShare code!
+
+
 RetroShare is a decentralized, private, secure, cross-platform, communication
 toolkit.
 RetroShare provides file sharing, chat, messages, forums, channels and more.
