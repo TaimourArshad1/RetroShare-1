@@ -1,0 +1,23 @@
+   if (!(password.contains("@")
+            || password.contains("#")
+	      || password.contains("$")
+	      || password.contains("%")
+	      || password.contains("^") 
+	      || password.contains("&")
+            || password.contains("*")
+	      || password.contains("!") 
+	      || password.contains("~")
+	      || password.contains("(")
+            || password.contains(")") 
+	      || password.contains("-")
+            || password.contains("+") 
+	      || password.contains("/")
+            || password.contains(":") 
+	      || password.contains(".")
+            || password.contains(", ")
+	      || password.contains("<")
+            || password.contains(">") 
+	      || password.contains("?")
+            || password.contains("|"))) {
+            throw new InvalidPasswordException(4);
+   }
