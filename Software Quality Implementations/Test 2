@@ -1,0 +1,10 @@
+@Test
+         public void shouldCreatePassword() {
+         PasswordValidator passwordValidator = new PasswordValidator();
+         passwordValidator.createPassword ( password: "Uoit1998!@");
+         Assertions.assertFalse(PasswordValidator.getPassword().isEmpty());
+         Assertions.assertTrue(passwordValidator.getPassword().stream()
+                    .filter(password -> password.getPassword().equals("Uoit1998!@"))
+                   .findAny()
+                   .isPresent());
+}
